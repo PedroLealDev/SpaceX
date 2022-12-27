@@ -1,0 +1,143 @@
+.body {
+  background-color: black;
+}
+
+.container00 {
+  &.container11 {
+    background-image: url(../../images/falcon9/01.jpg);
+  }
+  &.container12 {
+    background-image: url(../../images/falcon9/02.jpg);
+  }
+  &.carousel01 {
+    background-image: url(../../images/falcon9/03.jpg);
+  }
+  &.carousel02 {
+    background-image: url(../../images/falcon9/04.jpg);
+  }
+  &.carousel03 {
+    background-image: url(../../images/falcon9/05.jpg);
+  }
+  &.carousel04 {
+    background-image: url(../../images/falcon9/06.jpg);
+  }
+  &.carousel05 {
+    background-image: url(../../images/falcon9/07.jpg);
+  }
+  &.container14 {
+    background-image: url(../../images/falcon9/08.jpg);
+  }
+}
+
+.title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+}
+.f9-title {
+  font-size: 90px;
+  font-weight: 550;
+  font-family: "Rubik", sans-serif;
+  line-height: 100%;
+}
+.numbers {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title-numb {
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 90%;
+}
+.subtitle-numb {
+  font-size: 20px;
+}
+.container-f9desc {
+  display: grid;
+  align-items: center;
+  justify-content: left;
+  height: 90vh;
+}
+.f9desc {
+  font-size: 22px;
+  width: 700px;
+  line-height: 50px;
+}
+#overviewPosition {
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+.carouselSlide {
+  img {
+    height: 100vh;
+  }
+  .carousel-text {
+    background-color: black;
+  }
+}
+.more-info {
+  height: 85vh;
+  padding-top: 240px;
+}
+#button {
+  margin: 0px 5px;
+  padding: 16px 18px;
+}
+
+// Media Query //
+
+@media (max-width: 770px) {
+  .title-numb {
+    font-size: 60px;
+  }
+  .subtitle-numb {
+    font-size: 16px;
+  }
+  .f9desc {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .more-info {
+    padding-top: 120px;
+  }
+}
+@media (max-width: 680px) {
+  .title-numb {
+    font-size: 50px;
+  }
+  .subtitle-numb {
+    font-size: 14px;
+  }
+  #overviewPosition {
+    width: auto;
+    margin-right: 13%;
+  }
+}
+@media (max-width: 575px) {
+  .f9-title {
+    font-size: 60px;
+  }
+  .numbers {
+    height: 60vh;
+    padding-top: 25px;
+  }
+}
+@media (max-width: 395px) {
+  .f9-title {
+    font-size: 48px;
+  }
+
+  .f9desc {
+    font-size: 16px;
+    line-height: 36px;
+  }
+  #overviewPosition {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

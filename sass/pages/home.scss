@@ -1,0 +1,40 @@
+.container00 {
+  &.container01 {
+    background-image: url(../../images/home/01.jpg);
+  }
+  &.container02 {
+    background-image: url(../../images/home/03.jpg);
+  }
+  &.container03 {
+    background-image: url(../../images/home/02.gif);
+  }
+  &.container04 {
+    background-image: url(../../images/home/04.jpg);
+  }
+}
+
+.titlepadding {
+  padding-top: 205px;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  width: 550px;
+}
+
+.section-big-title {
+  width: 650px;
+}
+
+// Media Query
+
+@media (max-width: 770px) {
+  .titlepadding {
+    padding-top: 120px;
+  }
+  .section-title,
+  .section-big-title {
+    width: auto;
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,85 @@
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  font-size: 12px;
+  font-weight: bold;
+
+  #navitem {
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+.logoPc {
+  width: 240px;
+  margin-left: -10px;
+  margin-right: 36px;
+  margin-top: 5px;
+}
+
+.arrowdown {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+}
+
+#button {
+  padding: $padding-button;
+  border: 2px solid white;
+}
+
+.footer {
+  height: 15vh;
+  background-color: black;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.copy {
+  color: $copy-color;
+}
+
+.anchor {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+// Media Query
+@media (max-width: 770px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 405px) {
+  .logoPc {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .logoPc {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
